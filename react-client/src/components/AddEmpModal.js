@@ -4,8 +4,8 @@ import {Modal, Button, Row, Col, Form, Image} from 'react-bootstrap';
 
 export class AddEmpModal extends Component {
 
-    photoFileName = "default.png";
-    imageSrc = process.env.REACT_APP_PHOTOPATH + 'department/';
+    photoFileName = "profile.png";
+    imageSrc = process.env.REACT_APP_PHOTOPATH + this.photoFileName;
     
     constructor(props) {
         super(props);
@@ -77,7 +77,7 @@ export class AddEmpModal extends Component {
     render() {
         return (
             <div className='container'>
-                <Modal {...this.props} size="md" aria-labelledby="contained-modal-title-vcenter" centered>
+                <Modal {...this.props} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
                     <Modal.Header closeButton>
                         <Modal.Title id="contained-modal-title-vcenter">
                             Add Employee
@@ -118,7 +118,8 @@ export class AddEmpModal extends Component {
                                 <br/>
                             </Col>
                             <Col sm={6}>
-                                <Image width="200" height="200" src={this.imageSrc} />
+                                <Image width="300" height="300" src={this.imageSrc} />
+                                <br/><br/>
                                 <input type="file" onChange={this.handleFileSelected} />
                             </Col>
                         </Row>

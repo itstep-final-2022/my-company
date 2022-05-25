@@ -80,8 +80,8 @@ export class Employee extends Component {
                                                     empId: emp.EmployeeId,
                                                     empName: emp.EmployeeName,
                                                     dep: emp.Department,
-                                                    photoFileName: emp.photoFileName,
-                                                    dateOfJoining: emp.dateOfJoining
+                                                    photoFileName: emp.PhotoFileName,
+                                                    dateOfJoining: emp.DateOfJoining
                                                 })}                                            
                                             >
                                                 Edit
@@ -120,12 +120,10 @@ export class Employee extends Component {
                     >
                         Add Employee
                     </Button>
-                    {/*
                     <AddEmpModal
-                        show={this.state.state.addModalShow}
+                        show={this.state.addModalShow}
                         onHide={addModalClose}
                     />
-                    */}
                 </ButtonToolbar>
             </div>
         );

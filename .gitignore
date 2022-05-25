@@ -1,4 +1,3 @@
 venv/
 .idea/
 react-client/node_modules
-DjangoAPI/db.sqlite3
